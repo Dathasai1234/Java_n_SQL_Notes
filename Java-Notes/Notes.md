@@ -176,7 +176,7 @@ The advantage of using bytecode is that it allows Java programs to be platform-i
 
 Overall, bytecode is a key feature of the Java platform that helps to make it a popular choice for developing cross-platform applications.
 
-![Alt text](Assets/Photos/ByteCode.png)
+![Alt text](/Assets/Photos/ByteCode.png)
 
 ## Binary Code.
 
@@ -289,12 +289,12 @@ public class HelloWorld {
 
 byte code
 
-![Alt text](Assets/Photos/ByteCode.png)
+![Alt text](/Assets/Photos/ByteCode.png)
 
 ## JDK JRE JVM relation.
 
-![Alt text](Assets/Photos/JDK%20JRE%20JVM-1.png)
-![Alt text](Assets/Photos/JDK%20JRE%20JVM-2.png)
+![Alt text](/Assets/Photos/JDK%20JRE%20JVM-1.png)
+![Alt text](/Assets/Photos/JDK%20JRE%20JVM-2.png)
 
 ---
 
