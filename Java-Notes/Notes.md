@@ -120,7 +120,7 @@ Overall, Java's security features are designed to provide a secure and reliable 
 
 ## Java architecture.
 
-![Alt text](Assets/Photos/architecture.png)
+![Alt text](/Assets/Photos/architecture.png)
 
 JITC - Java in time compiler.
 
