@@ -95,6 +95,24 @@
 
 ---
 
+- [Casting](#casting)
+
+  - [Castig Definition](#casting-definition)
+  - [1. Primitive casting](#1-primitive-casting)
+  - [2. non-Primitive casting](#2-non-primitive-casting)
+
+  - [Types of Primitive Casting](#types-of-primitive-casting)
+
+    - [Widning Casting](#1-widening)
+    - [Narrowing Casting](#2-narrowing)
+
+  - [Types of non primitive Casting](#types-of-non-primitive-casting)
+  - [Coding Examples](#coding-examples)
+  - [Important for Interviews](#important-for-interviews)
+  - [Assignment Example](#assignment-example)
+
+---
+
 # Java Basics
 
 ## Defination.
@@ -1328,6 +1346,15 @@ Converting one **non primitive data** to another **non primitive data** is known
 
 1. Widening
 2. narrowing
+
+---
+
+## Types of non primitive casting
+
+1. Up casting
+2. Down casting.
+
+---
 
 ### 1. Widening
 
