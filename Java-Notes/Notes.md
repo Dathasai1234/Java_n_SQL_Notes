@@ -1100,7 +1100,7 @@ The result of the division operation will be a **`double`** value because both o
 
 In summary, the datatype of the output for the division and modulus operations will depend on the datatype of the operands involved. When both operands are **`int`**, the output will be an **`int`** value. When both operands are **`double`**, the output will be a **`double`** value.
 
-[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)
+In summary, the datatype of the output for the division and modulus operations will depend on the datatype of the operands involved. When both operands are **`int`**, the output will be an **`int`** value. When both operands are **`double`**, the output will be a **`double`** value.
 
 If **`a`** and **`b`** are of different data types (**`int`** and **`double`**), then the data type of the result will be the wider data type of the two operands, which is **`double`**. This is known as type promotion in Java.
 
@@ -1115,8 +1115,6 @@ double modulusResult = a % b; // modulusResult will be 1.0
 In this case, the result of the division operation will be a **`double`** value because one of the operands is **`double`**. The result of the modulus operation will also be a **`double`** value.
 
 Note that when an **`int`** value is divided by a **`double`** value, the **`int`** value is implicitly converted to a **`double`** value before the division is performed. This is another example of type promotion in Java.
-
-[data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e](data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2730%27%20height=%2730%27/%3e)
 
 When a **`double`** is divided by an **`int`**, the result will be a **`double`** value.
 
