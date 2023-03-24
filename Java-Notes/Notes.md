@@ -1,4 +1,99 @@
-# JAVA Basics
+- [JAVA Basics](#java-basics)
+
+  - [Definition](#defination)
+  - [features-of-java](#features-of-java)
+  - [levels-in-java](#levels-in-java)
+  - [properties-of-java-file-execution](#properties-of-java-file-execution)
+  - [java-architecture](#java-architecture)
+
+---
+
+- [Types of Codes](#types-of-codes)
+
+  - [Source Code.](#source-code)
+  - [Byte Code.](#byte-code)
+  - [Binary Code.](#binary-code)
+
+---
+
+- [JDK JRE, JVM](#types-of-codes)
+
+  - [JDK](#jdk)
+  - [JRE](#jre)
+  - [JVM](#jvm)
+  - [JDK JRE JVM relation](#jdk-jre-jvm-relation)
+
+---
+
+- [Tokens](#tokens)
+
+  - [Types of Tokens](#types-of-tokens)
+  - [Keywords](#1-keywords)
+  - [Identifiers](#2-identifiers)
+  - [Literals](#3-literals)
+
+---
+
+- [JAVA structure](#java-structure)
+
+  - [Syntax of JAVA.](#syntax-of-java)
+
+---
+
+- [Data Types](#data-types)
+
+  - [Definition.](#definition)
+  - [Primitive Datatypes.](#primitive-datatypes)
+  - [Min and Max values of Primitive datatypes](#min-and-max-values-of-primitive-datatypes)
+  - [Non-Primitive Datatypes.](#non-primitive-datatypes)
+
+---
+
+- [Variables](#variables)
+
+  - [Definition of Variables.](#definition-of-variables)
+  - [Properties of variables.](#properties-of-variables)
+  - [1. Variable Declaration.](#1-variable-declaration)
+  - [2. Variable Initialization.](#2-variable-initialization)
+  - [3. Variable Utilization.](#3-variable-utilization)
+  - [Code examples.](#code-examples)
+  - [Error code Examples.](#error-code-examples)
+
+---
+
+- [Reinitialization](#reinitialization)
+  - [Re-initialization](#re-initialization)
+
+---
+
+- [Types of Variables](#types-of-variables)
+  - [Types of Variables](#types-of-variables-1)
+  - [Local Variables](#local-variables)
+  - [Data Members](#data-members)
+
+---
+
+- [Operator](#operator)
+  - [Operator](#operator-1)
+  - [Operands](#operands)
+  - [Types of Operands](#types-of-operands)
+  - [1. Unary Operator](#1-unary-operator)
+  - [2. Binary Operator](#2-binary-operator)
+  - [3. Ternary Operator](#3-ternary-operator)
+
+---
+
+- [List of Operators](#list-of-operators)
+  - [List of Operators](#list-of-operators-1)
+  - [+ (Addition)](#addition)
+  - [Concatenation](#concatenation)
+  - [- (Minus or Substraction)](#minus-or-substraction)
+  - [\* , / , % Multiplication, division, modulus](#multiplication-division-modulus)
+  - [double, int divisions](#double-int-divisions)
+  - [Assignment operators](#assignment-operators)
+  - [Compound Operators](#compound-operators)
+
+---
 
 ## Defination.
 
@@ -120,7 +215,7 @@ Overall, Java's security features are designed to provide a secure and reliable 
 
 ## Java architecture.
 
-![Alt text](/Assets/Photos/architecture.png)
+![architecture of java](/Assets/Photos/architecture.png)
 
 JITC - Java in time compiler.
 
@@ -545,6 +640,8 @@ The Data whose memory is already defined such data is known as Primitive data. T
     - 💖double
 - Characters
 - Boolean
+
+## Min and Max values of Primitive datatypes
 
 | Data Type | Primitive/Non-primitive | Size (in bits) | Minimum Value              | Maximum Value             |
 | --------- | ----------------------- | -------------- | -------------------------- | ------------------------- |
@@ -979,8 +1076,6 @@ public class Substraction {
   ***
 
   ```java
-  package Basics;
-
   public class g {
       public static void main(String[] args) {
 
@@ -1188,7 +1283,7 @@ Example:
           System.out.println(ch);
           ch += 32;
           System.out.println(ch);
-  				ch -= 32;
+          ch -= 32;
           System.out.println(ch);
       }
   }
@@ -1205,3 +1300,5 @@ Example:
 - The compound operator is used to increment the number or the character to itself.
 - In the above code, the ANCii value of character ‘A’ is 65. We can convert that upper case ‘A’ to smaller case ‘a’ by adding 32 to that character.
 - By subtracting 32 to the character value of ‘a’, we can convert lower case ‘a’ to upper case ‘A’.
+
+---
