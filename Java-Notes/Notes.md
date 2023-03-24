@@ -95,6 +95,8 @@
 
 ---
 
+# Java Basics
+
 ## Defination.
 
 Java is a high-level, general-purpose programming language that is designed to be
@@ -215,7 +217,7 @@ Overall, Java's security features are designed to provide a secure and reliable 
 
 ## Java architecture.
 
-![architecture of java](/Assets/Photos/architecture.png)
+![architecture of java](/Java-Notes/Assets/Photos/architecture.png)
 
 JITC - Java in time compiler.
 
@@ -271,7 +273,7 @@ The advantage of using bytecode is that it allows Java programs to be platform-i
 
 Overall, bytecode is a key feature of the Java platform that helps to make it a popular choice for developing cross-platform applications.
 
-![Alt text](/Assets/Photos/ByteCode.png)
+![Alt text](/Java-Notes//Assets/Photos/ByteCode.png)
 
 ## Binary Code.
 
@@ -384,12 +386,12 @@ public class HelloWorld {
 
 byte code
 
-![Alt text](/Assets/Photos/ByteCode.png)
+![Alt text](/Java-Notes/Assets/Photos/ByteCode.png)
 
 ## JDK JRE JVM relation.
 
-![Alt text](/Assets/Photos/JDK%20JRE%20JVM-1.png)
-![Alt text](/Assets/Photos/JDK%20JRE%20JVM-2.png)
+![Alt text](/Java-Notes/Assets/Photos/JDK%20JRE%20JVM-1.png)
+![Alt text](/Java-Notes/Assets/Photos/JDK%20JRE%20JVM-2.png)
 
 ---
 
@@ -1300,5 +1302,156 @@ Example:
 - The compound operator is used to increment the number or the character to itself.
 - In the above code, the ANCii value of character ‘A’ is 65. We can convert that upper case ‘A’ to smaller case ‘a’ by adding 32 to that character.
 - By subtracting 32 to the character value of ‘a’, we can convert lower case ‘a’ to upper case ‘A’.
+
+---
+
+# Casting
+
+## Casting definition
+
+Converting one type of data to another type of data. There are two types of casting.
+
+1. Primitive casting
+2. Non primitive casting.
+
+## 1. Primitive casting
+
+Converting the one primitive data to another primitive data is known as primitive casting.
+
+## 2. Non primitive casting
+
+Converting one **non primitive data** to another **non primitive data** is known as **non primitive casting**.
+
+---
+
+## Types of Primitive casting
+
+1. Widening
+2. narrowing
+
+### 1. Widening
+
+Converting the **_smaller data_** type to **_larger data_** type is known as `Widening`.
+
+It is also known as the `implicit casting`.
+
+**Example:**
+
+```java
+  double d = 2;
+  System.out.println(d); // 2.0
+```
+
+**Output:**
+2.0
+
+- 2 → 2.0
+
+- from **int** to **double**
+
+### 2. Narrowing
+
+Converting the **_Larger data type_** to **_smaller data type_** is known as a `narrowing`
+
+It is also known as `explicit casting`.
+
+Example:
+
+```java
+  int i = (int)2.9;
+  System.out.println(i); // 2
+```
+
+**Output:**
+2
+
+**`NOTE`**: In narrowing, data loss is there.
+
+---
+
+### **Coding Examples**
+
+#### Implicit casting
+
+```java
+  class Example {
+    public static void main(String[] args) {
+        char ch = 'A';
+        ch = ch + 1;
+        System.out.println(ch);
+    }
+}
+```
+
+**Output:**
+`Type mismatch: cannot convert from int to char.`
+
+int size = 4.
+char size = 2.
+
+4 ↛ 2.
+
+---
+
+#### Explicit Casting
+
+```java
+class Example {
+    public static void main(String[] args) {
+        char ch = 'A';
+        ch = (char) (ch + 1);
+        System.out.println(ch);
+    }
+}
+```
+
+**Output:**
+B
+
+---
+
+#### **Implicit** casting happening **explicitly**.
+
+```java
+  class Example {
+    public static void main(String[] args) {
+        char ch = 'A';
+        ch += 1;
+        System.out.println(ch);
+    }
+}
+```
+
+## `Important for Interviews`
+
+| case1               | case2                 |
+| ------------------- | --------------------- |
+| **_ch = ch + 1_**   | **_ch = 66_**         |
+| - stored input      | - direct input        |
+| - Explicit Casting  | - Implicit casting    |
+| - Error will occur. | - No error will occur |
+
+---
+
+## Assignment Example
+
+Write a program to print the sum of two character data.
+
+```java
+  class Example {
+    public static void main(String[] args) {
+        char a = '0';
+        char b = '9';
+        char c = (char) (a + b);
+        System.out.println(c);
+    }
+}
+```
+
+**Output:**
+i
+
+**Tracing:**
+![Alt text](../Assets/Photos/Casting_Tracing.jpg)
 
 ---
