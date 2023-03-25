@@ -966,7 +966,9 @@ Example : Conditional Operator.
 ## List of Operators
 
 1.  Arthematic operators
-
+    1.  + (Addition)
+    2.  - (Substraction or minus)
+    3.  * (Multiplication)
     4.  / (division)
     5.  % (modulus)
 
