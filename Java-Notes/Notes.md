@@ -18,10 +18,13 @@
 
 - [JDK JRE, JVM](#types-of-codes)
 
-  - [JDK](#jdk)
-  - [JRE](#jre)
-  - [JVM](#jvm)
-  - [JDK JRE JVM relation](#jdk-jre-jvm-relation)
+  [JDK](#jdk)
+
+  [JRE](#jre)
+
+  [JVM](#jvm)
+
+  [JDK JRE JVM relation](#jdk-jre-jvm-relation)
 
 ---
 
@@ -98,7 +101,9 @@
 - [Casting](#casting)
 
   - [Castig Definition](#casting-definition)
+
   - [1. Primitive casting](#1-primitive-casting)
+
   - [2. non-Primitive casting](#2-non-primitive-casting)
 
   - [Types of Primitive Casting](#types-of-primitive-casting)
@@ -107,9 +112,16 @@
     - [Narrowing Casting](#2-narrowing)
 
   - [Types of non primitive Casting](#types-of-non-primitive-casting)
+
   - [Coding Examples](#coding-examples)
+
   - [Important for Interviews](#important-for-interviews)
+
   - [Assignment Example](#assignment-example)
+
+---
+
+- [Programming Problems](#programming-questions)
 
 ---
 
@@ -133,7 +145,7 @@ It was developed by Sun Microsystems (now owned by Oracle Corporation) in the mi
 
 Java is an Object Oriented Programming Language (OOPS).
 
-## **OOPS**
+## OOPS
 
 in Java we are going to write the program based on orientation or features of the object.
 
@@ -141,10 +153,10 @@ OOPS in Java stands for Object-Oriented Programming System. Object-oriented prog
 
 In Java, everything is an object, and the language is designed to support the four fundamental principles of OOP:
 
-1.  Encapsulation: The process of hiding the implementation details of an object and exposing only the necessary information.
-2.  Inheritance: The ability of an object to inherit properties and methods from another object.
-3.  Polymorphism: The ability of an object to take on different forms or types.
-4.  Abstraction: The ability to represent complex real-world scenarios in a simplified manner.
+1. Encapsulation: The process of hiding the implementation details of an object and exposing only the necessary information.
+2. Inheritance: The ability of an object to inherit properties and methods from another object.
+3. Polymorphism: The ability of an object to take on different forms or types.
+4. Abstraction: The ability to represent complex real-world scenarios in a simplified manner.
 
 By using OOP concepts in Java, developers can create modular, reusable, and maintainable code that is easier to understand and modify. OOP principles also help to reduce code duplication, increase code readability, and make code more efficient.
 
@@ -152,10 +164,10 @@ By using OOP concepts in Java, developers can create modular, reusable, and main
 
 Java is a high-level programming language, which means that it is designed to be easy to read and write, and to be used by humans rather than machines. Java provides a wide range of features that make it a high-level language, including:
 
-1.  encapsulation.
-2.  Inheritance.
-3.  Polymorphism.
-4.  Abstraction.
+1. encapsulation.
+2. Inheritance.
+3. Polymorphism.
+4. Abstraction.
 
 ## MultiThreading
 
@@ -175,11 +187,11 @@ Java is very secure language.
 
 Java has a number of security features designed to protect against security threats, such as viruses, hackers, and malicious code. Some of the key security features in Java include:
 
-1.  Security Manager: Java provides a security manager that can be used to control the actions of Java applications and applets. The security manager can be configured to allow or deny certain actions, such as accessing the file system, creating network connections, or loading native code.
-2.  Bytecode Verification: Java bytecode is verified before it is executed by the JVM to ensure that it does not violate Java's type safety rules. This helps to prevent buffer overflows, stack overflows, and other common security vulnerabilities.
-3.  Class Loaders: Java uses a hierarchical class loader system to load classes into the JVM. This provides a level of isolation between different classes, and helps to prevent classes from accessing resources that they should not have access to.
-4.  Cryptography: Java includes a range of cryptographic libraries that can be used to encrypt and decrypt data, generate digital signatures, and perform other cryptographic functions.
-5.  Secure Communication: Java provides a range of APIs for performing secure communication over networks, including SSL/TLS, HTTPS, and SFTP.
+1. Security Manager: Java provides a security manager that can be used to control the actions of Java applications and applets. The security manager can be configured to allow or deny certain actions, such as accessing the file system, creating network connections, or loading native code.
+2. Bytecode Verification: Java bytecode is verified before it is executed by the JVM to ensure that it does not violate Java's type safety rules. This helps to prevent buffer overflows, stack overflows, and other common security vulnerabilities.
+3. Class Loaders: Java uses a hierarchical class loader system to load classes into the JVM. This provides a level of isolation between different classes, and helps to prevent classes from accessing resources that they should not have access to.
+4. Cryptography: Java includes a range of cryptographic libraries that can be used to encrypt and decrypt data, generate digital signatures, and perform other cryptographic functions.
+5. Secure Communication: Java provides a range of APIs for performing secure communication over networks, including SSL/TLS, HTTPS, and SFTP.
 
 Overall, Java's security features are designed to provide a secure and reliable platform for developing and deploying applications, and to protect against a wide range of security threats.
 
@@ -199,9 +211,11 @@ Overall, Java's security features are designed to provide a secure and reliable 
 
 ## Properties of Java file Execution.
 
-1.  Coding.
-2.  Compiling.
-3.  Executing.
+1. Coding.
+
+2. Compiling.
+
+3. Executing.
 
 - Coding.
 
@@ -212,21 +226,25 @@ Overall, Java's security features are designed to provide a secure and reliable 
 - Compiler.
 
   - In compilation compiler will translate high level source code to middle level code.
+
   - We can expect to outputs from the compiler.
 
     CTE - Compile Time Error.
 
     CTS - Compile Time Success.
 
-  1.  CTE - (Compile Time Error).
-      - When there is an error in the source code then we can expect compile time error from compiler.
-      - When we are getting CTE we need to change the source code so that no errors will be there.
-      - We need to save the file before giving to the compiler.
-  2.  CTS - (Compile Time Success).
-      - After submitting the code to the compiler, if there are no errors at the time, we can expect CTS.
-      - When we get CTS, we can expect a .class to be generated.
-      - .class file is also known as byte code.
-      - A unique code is going to be present as bytecode.`
+  1. CTE - (Compile Time Error).
+
+  - When there is an error in the source code then we can expect compile time error from compiler.
+  - When we are getting CTE we need to change the source code so that no errors will be there.
+  - We need to save the file before giving to the compiler.
+
+  2. CTS - (Compile Time Success).
+
+  - After submitting the code to the compiler, if there are no errors at the time, we can expect CTS.
+  - When we get CTS, we can expect a .class to be generated.
+  - .class file is also known as byte code.
+  - A unique code is going to be present as bytecode.`
 
 - execution.
 
@@ -235,7 +253,7 @@ Overall, Java's security features are designed to provide a secure and reliable 
 
 ## Java architecture.
 
-![architecture of java](/Java-Notes/Assets/Photos/architecture.png)
+![Alt text](../Assets/Photos/architecture.png)
 
 JITC - Java in time compiler.
 
@@ -291,7 +309,7 @@ The advantage of using bytecode is that it allows Java programs to be platform-i
 
 Overall, bytecode is a key feature of the Java platform that helps to make it a popular choice for developing cross-platform applications.
 
-![Alt text](/Java-Notes//Assets/Photos/ByteCode.png)
+![Alt text](../Assets/Photos/ByteCode.png)
 
 ## Binary Code.
 
@@ -318,11 +336,11 @@ JDK stands for Java Development Kit. It is a software development kit that conta
 
 Here are some of the main components of the JDK:
 
-1.  Java Compiler: The Java compiler (javac) is a tool that converts Java source code into bytecode that can be executed by the JVM.
-2.  Java Virtual Machine (JVM): The JVM is the component that executes Java bytecode. It is responsible for providing a runtime environment in which Java programs can run.
-3.  Java Runtime Environment (JRE): The JRE is a subset of the JDK that is required to run Java applications. It includes the JVM and other necessary components such as class libraries and runtime support files.
-4.  Java Development Tools: The JDK includes various development tools, such as the Java debugger (jdb), which helps developers debug their Java applications, and the JavaDoc tool, which generates documentation for Java code.
-5.  Libraries and APIs: The JDK includes a set of class libraries and APIs that provide developers with a rich set of functionality for building Java applications. These libraries and APIs cover a wide range of areas, such as networking, security, and user interface development.
+1. Java Compiler: The Java compiler (javac) is a tool that converts Java source code into bytecode that can be executed by the JVM.
+2. Java Virtual Machine (JVM): The JVM is the component that executes Java bytecode. It is responsible for providing a runtime environment in which Java programs can run.
+3. Java Runtime Environment (JRE): The JRE is a subset of the JDK that is required to run Java applications. It includes the JVM and other necessary components such as class libraries and runtime support files.
+4. Java Development Tools: The JDK includes various development tools, such as the Java debugger (jdb), which helps developers debug their Java applications, and the JavaDoc tool, which generates documentation for Java code.
+5. Libraries and APIs: The JDK includes a set of class libraries and APIs that provide developers with a rich set of functionality for building Java applications. These libraries and APIs cover a wide range of areas, such as networking, security, and user interface development.
 
 In summary, the JDK is a comprehensive software development kit that provides developers with everything they need to build, test, and debug Java applications.
 
@@ -341,11 +359,11 @@ JRE (Java Runtime Environment): The JRE is a software bundle that provides the r
 
 The Java Runtime Environment (JRE) consists of several components, including:
 
-1.  Java Virtual Machine (JVM): The JVM is the core component of the JRE. It is responsible for interpreting and executing Java bytecode. The JVM provides a runtime environment in which Java programs can run, and it manages memory allocation and garbage collection.
-2.  Class Libraries: The JRE includes a set of class libraries that provide a range of functionality for Java applications. These libraries include the core Java API, which provides classes and interfaces for common programming tasks, such as input and output, networking, and threading.
-3.  Java Plugin: The JRE includes a web browser plugin that allows Java applets and applications to run within a web browser.
-4.  Java Web Start: Java Web Start is a technology that allows Java applications to be launched from a web page without the need for a web browser plugin. It provides an easy way to deploy and manage Java applications.
-5.  Java Deployment Tools: The JRE includes various deployment tools that help developers package and distribute Java applications.
+1. Java Virtual Machine (JVM): The JVM is the core component of the JRE. It is responsible for interpreting and executing Java bytecode. The JVM provides a runtime environment in which Java programs can run, and it manages memory allocation and garbage collection.
+2. Class Libraries: The JRE includes a set of class libraries that provide a range of functionality for Java applications. These libraries include the core Java API, which provides classes and interfaces for common programming tasks, such as input and output, networking, and threading.
+3. Java Plugin: The JRE includes a web browser plugin that allows Java applets and applications to run within a web browser.
+4. Java Web Start: Java Web Start is a technology that allows Java applications to be launched from a web page without the need for a web browser plugin. It provides an easy way to deploy and manage Java applications.
+5. Java Deployment Tools: The JRE includes various deployment tools that help developers package and distribute Java applications.
 
 Overall, the JRE provides a runtime environment in which Java applications can run, and it includes everything necessary for Java programs to execute, including the JVM and class libraries.
 
@@ -368,19 +386,23 @@ The JVM provides many services to the Java program, such as memory management, g
 
 Overall, the JVM provides a powerful and flexible platform for running Java programs, and helps to ensure that Java programs are portable, secure, and reliable across different platforms and environments.
 
-1.  Class Loader: The class loader is responsible for loading the Java classes into memory at runtime. It takes the bytecode generated by the Java compiler and loads it into memory so that the JVM can execute it.
-2.  Runtime Data Area: The runtime data area is where the JVM stores data while the Java program is running. It consists of several parts, including:
+1. Class Loader: The class loader is responsible for loading the Java classes into memory at runtime. It takes the bytecode generated by the Java compiler and loads it into memory so that the JVM can execute it.
 
-    a. Heap: The heap is the memory area where Java objects are stored. It is managed by the garbage collector and automatically frees memory that is no longer being used by the program.
+2. Runtime Data Area: The runtime data area is where the JVM stores data while the Java program is running. It consists of several parts, including:
 
-    b. Method Area: The method area is where the JVM stores class structures and method bytecode.
+a. Heap: The heap is the memory area where Java objects are stored. It is managed by the garbage collector and automatically frees memory that is no longer being used by the program.
 
-    c. Java Stack: The Java stack is where Java methods are executed. It keeps track of method calls and stores method arguments and local variables.
+b. Method Area: The method area is where the JVM stores class structures and method bytecode.
 
-3.  Execution Engine: The execution engine is responsible for executing the Java bytecode. It reads the bytecode from memory and executes it on the underlying hardware. The execution engine uses various optimization techniques to improve performance, such as just-in-time (JIT) compilation.
-4.  Security Manager: The security manager is a Java class that provides security by controlling access to system resources such as files, network sockets, and threads. It helps to prevent unauthorized access to sensitive data and protects against malicious code.
-5.  Just-In-Time (JIT) Compiler: The JIT compiler is a feature of the JVM that can improve the performance of Java applications. It compiles frequently executed sections of bytecode into native machine code at runtime, which can result in faster execution times.
-6.  Profiling and Debugging Tools: The JVM provides various profiling and debugging tools that help developers optimize their Java applications. For example, the Java Virtual Machine Profiler Interface (JVMPI) provides a set of APIs that allow developers to collect runtime performance data, while the Java Debug Interface (JDI) provides a way to remotely debug Java programs.
+c. Java Stack: The Java stack is where Java methods are executed. It keeps track of method calls and stores method arguments and local variables.
+
+3. Execution Engine: The execution engine is responsible for executing the Java bytecode. It reads the bytecode from memory and executes it on the underlying hardware. The execution engine uses various optimization techniques to improve performance, such as just-in-time (JIT) compilation.
+
+4. Security Manager: The security manager is a Java class that provides security by controlling access to system resources such as files, network sockets, and threads. It helps to prevent unauthorized access to sensitive data and protects against malicious code.
+
+5. Just-In-Time (JIT) Compiler: The JIT compiler is a feature of the JVM that can improve the performance of Java applications. It compiles frequently executed sections of bytecode into native machine code at runtime, which can result in faster execution times.
+
+6. Profiling and Debugging Tools: The JVM provides various profiling and debugging tools that help developers optimize their Java applications. For example, the Java Virtual Machine Profiler Interface (JVMPI) provides a set of APIs that allow developers to collect runtime performance data, while the Java Debug Interface (JDI) provides a way to remotely debug Java programs.
 
 | Component                     | Description                                                       |
 | ----------------------------- | ----------------------------------------------------------------- |
@@ -403,13 +425,12 @@ public class HelloWorld {
 ```
 
 byte code
-
-![Alt text](/Java-Notes/Assets/Photos/ByteCode.png)
+![Alt text](../Assets/Photos/ByteCode.png)
 
 ## JDK JRE JVM relation.
 
-![Alt text](/Java-Notes/Assets/Photos/JDK%20JRE%20JVM-1.png)
-![Alt text](/Java-Notes/Assets/Photos/JDK%20JRE%20JVM-2.png)
+![Alt text](../Assets/Photos/JDK%20JRE%20JVM-1.png)
+![Alt text](../Assets/Photos/JDK%20JRE%20JVM-2.png)
 
 ---
 
@@ -417,10 +438,10 @@ byte code
 
 ## Types of Tokens.
 
-1.  Keywords
-2.  Identifiers
-3.  Literals
-4.  Operators
+1. Keywords
+2. Identifiers
+3. Literals
+4. Operators
 
 ## 1. Keywords.
 
@@ -431,7 +452,9 @@ byte code
 ## 2. Identifiers.
 
 - Names given to Java components is known as identifiers.
+
 - Examples are class variables methods interface packages constructor names.
+
 - Rules-
 
   - Identifier can exist of alphabets and numerical values
@@ -446,7 +469,7 @@ byte code
     - Example: Qspiders_Magic.
   - I T standard for methods / variables.
     - happy_Magic
-    - Manual_Testing
+    - manual_Testing
     - Only first word is a canal case. Later Pascal cases are followed.
 
 ## 3. Literals.
@@ -478,8 +501,8 @@ Literals are constant values that cannot be changed during the execution of a pr
 
 In Java, number literals are used to represent numeric values. There are two types of number literals:
 
-1.  integer literals
-2.  floating-point literals.
+1. integer literals
+2. floating-point literals.
 
 Integer literals are used to represent whole numbers. Here are some examples:
 
@@ -516,13 +539,6 @@ In Java, a boolean literal is a way to represent a boolean value as a value in y
 Boolean literals are commonly used in Java to represent logical values, such as the result of a comparison or a condition in a program. They are often used in control flow statements, such as **`if`** statements and loops, to determine the flow of a program based on the value of a boolean expression.
 
 ## difference between character literal and strings literal.
-
-| Type              | Description                                                     | Empty Value | Minimum Value |
-| ----------------- | --------------------------------------------------------------- | ----------- | ------------- |
-| String Literal    | A sequence of zero or more characters enclosed in double quotes | Allowed     | Zero          |
-| Character Literal | A single character enclosed in single quotes                    | Not Allowed | One           |
-| String            | A sequence of zero or more characters                           | Allowed     | Zero          |
-| char              | A single character                                              | Not Allowed | One           |
 
 | Property      | String          | char        |
 | ------------- | --------------- | ----------- |
@@ -620,9 +636,9 @@ false
 
 ```java
 class My_first {
-		public static void main(String[] args) {
-				System.out.println("Hello World");
-		}
+        public static void main(String[] args) {
+                System.out.println("Hello World");
+        }
 }
 ```
 
@@ -701,9 +717,9 @@ In non-primitive data, we can store more than one value.
 
 There are three main Properties.
 
-1.  Variable declaration
-2.  Variable Initialization
-3.  Variable Utilization.
+1. Variable declaration
+2. Variable Initialization
+3. Variable Utilization.
 
 ## 1. Variable Declaration.
 
@@ -801,7 +817,7 @@ Happy Birthday
 
   **output**
 
-`java: as of release 9,  '_' is a keyword, and may not be used as an identifier`
+  `java: as of release 9, '_' is a keyword, and may not be used as an identifier`
 
 - \_$ can be used
 
@@ -823,13 +839,13 @@ Happy Birthday
 Reassigning or changing the old data with new suitable data.
 
 ```java
-class Reinitialization{
-		public static void main(String[] args) {
-				int a = 20;
-				System.out.println(a);
-				a = 30;
-				System.out.println(a);
-		}
+public class Literals {
+    public static void main(String[] args) {
+        int a = 20;
+        System.out.println(a);
+        a = 30;
+        System.out.println(a);
+    }
 }
 ```
 
@@ -856,6 +872,7 @@ print(a) → 30;
 NOTE
 
 - In JAVA re-inintialization is possible, but re-declaration is not possible. Because JAVA does not allow duplicate memory blocks
+
 - Re-initialization Coding example.
 
   ```java
@@ -890,7 +907,7 @@ NOTE
 
   **Output**
 
-`java: variable a is already defined in method main(java.lang.String[])`
+  `java: variable a is already defined in method main(java.lang.String[])`
 
 ---
 
@@ -900,8 +917,8 @@ NOTE
 
 There are two types of variables.
 
-1.  Local Variables.
-2.  data member
+1. Local Variables.
+2. data member
 
 ## Local Variables
 
@@ -937,9 +954,9 @@ Example : a = 20
 
 There are 3 types of Operators.
 
-1.  Unary Operator.
-2.  Binary Operator.
-3.  ternary Operator.
+1. Unary Operator.
+2. Binary Operator.
+3. ternary Operator.
 
 ## 1. Unary Operator
 
@@ -965,15 +982,22 @@ Example : Conditional Operator.
 
 ## List of Operators
 
-1.  Arthematic operators
+1. Arthematic operators
 
-    4.  / (division)
-    5.  % (modulus)
+2. \*(Multiplication)
+
+3. / (division)
+
+4. % (modulus)
+
+5. +(Addition).
+
+6. -(Substraction).
 
 ## + (Addition)
 
-1.  Addition.
-2.  Concatenation.
+1. Addition.
+2. Concatenation.
 
 Case 1:
 
@@ -983,13 +1007,13 @@ Case 1:
 
 ```java
 class Example{
-		public static void main(String[] args) {
-				int a = 10;
-				int b = 20;
-				int res;
-				res = a + b;
-				System.out.println(res);
-		}
+        public static void main(String[] args) {
+                int a = 10;
+                int b = 20;
+                int res;
+                res = a + b;
+                System.out.println(res);
+        }
 }
 ```
 
@@ -1020,19 +1044,24 @@ public class Literals {
 
 ## ASCii Values
 
-1.  0-9
-    - 0 - 48
-    - 9 - 57
-2.  A-Z
-    - A - 65
-    - Z - 90
-3.  a-z
-    - a - 97
-    - z - 122
+1. 0-9
+
+- 0 - 48
+- 9 - 57
+
+2. A-Z
+
+- A - 65
+- Z - 90
+
+3. a-z
+
+- a - 97
+- z - 122
 
 ## Concatenation
 
-- merging two different datas or two Strings data is known as concatenation.
+- merging two different data's or two Strings data is known as concatenation.
 - Output of this process is a “string” data.
 
 ## - (Minus or Substraction)
@@ -1044,9 +1073,9 @@ public class Substraction {
     public static void main(String[] args) {
 
        char ch1 = 'A';
-			 char ch2 = '2';
-			 int a = ch1 - ch2;          // 65 - 90
-			 System.out.println(a);
+             char ch2 = '2';
+             int a = ch1 - ch2;          // 65 - 90
+             System.out.println(a);
 
     }
 }
@@ -1318,7 +1347,9 @@ Example:
   A
 
 - The compound operator is used to increment the number or the character to itself.
+
 - In the above code, the ANCii value of character ‘A’ is 65. We can convert that upper case ‘A’ to smaller case ‘a’ by adding 32 to that character.
+
 - By subtracting 32 to the character value of ‘a’, we can convert lower case ‘a’ to upper case ‘A’.
 
 ---
@@ -1373,7 +1404,6 @@ It is also known as the `implicit casting`.
 2.0
 
 - 2 → 2.0
-
 - from **int** to **double**
 
 ### 2. Narrowing
@@ -1396,7 +1426,7 @@ Example:
 
 ---
 
-### **Coding Examples**
+### Coding Examples
 
 #### Implicit casting
 
@@ -1437,7 +1467,7 @@ B
 
 ---
 
-#### **Implicit** casting happening **explicitly**.
+#### Implicit casting happening explicitly.
 
 ```java
   class Example {
@@ -1479,6 +1509,220 @@ Write a program to print the sum of two character data.
 i
 
 **Tracing:**
+
 ![Alt text](../Assets/Photos/Casting_Tracing.jpg)
 
 ---
+
+# Programming Questions
+
+1. Write a program to print the sum of 1st three numbers and last three numbers in the given data.
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           int a = 23;
+           int b = 34;
+           int c = 45;
+           int d = 56;
+           int e = 67;
+
+           System.out.println("\n");
+
+           System.out.println(
+                   "Sum of 1st three numbers is: " + (a + b + c) + " and \nSum of last three numbers is: " + (c + d + e));
+       }
+   }
+   ```
+
+2. Write a program to print the product of sum of first three numbers and difference of last three numbers.
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           int a = 23;
+           int b = 34;
+           int c = 45;
+           int d = 56;
+           int e = 67;
+
+           System.out.println("\n");
+
+           System.out.println("The product of sum of 1st 3 numbers and difference of last three numbers are" + ((a + b + c)*(c - d - e)));
+       }
+   }
+   ```
+
+3. Write a program to print the difference of sum of 1st 4 numbers and product of last three numbers.
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           int a = 23;
+           int b = 34;
+           int c = 45;
+           int d = 56;
+           int e = 67;
+
+           System.out.println("\n"); // \n is for empty line.
+
+           System.out.println("Sum of 1st four numbers is: " + (a + b + c + d) + " and \nProduct of last three numbers is: " + (c * d * e));
+           System.out.println("The Difference is: " + ((a + b + c + d) - (c - d - e)));
+       }
+   }
+   ```
+
+4. Write the program to print the quotient of sum of 1st four numbers and difference of last two numbers.
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           int a = 23;
+           int b = 34;
+           int c = 45;
+           int d = 56;
+           int e = 67;
+
+           int add = a + b + c + d;
+           int diff = d - e;
+           int quot = add / diff;
+
+           System.out.println("The Sum of " + a + "," + b + "," + c + "," + d + " is: " + add + "\nand Difference of " + d + " and " + e + " is: " + diff);
+           System.out.println("The Quotient of " + add + " and " + diff + " is: " + quot);
+       }
+   }
+   ```
+
+5. Write a program to print the sum of last three vowel characters.
+
+   ```java
+   public class Solution{
+       public static void main(String[] args) {
+           char a = 'I';
+           char b = 'O';
+           char c = 'U';
+
+           System.out.println("Sum of last three vowels " + a + "," + b + "," + c + " is: " + (a + b + c));
+       }
+   }
+   ```
+
+6. Write a program to print the sum of starting ranges of digit, upper case Alphabet. characters, lower case Alphabet characters.
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           char ch1 = '0';
+           char ch2 = 'A';
+           char ch3 = 'a';
+
+           char res = (char) (ch1 + ch2 + ch3);
+
+           System.out.println("Sum of " + ch1 + "," + ch2 + "," + ch3 + " is: " + res);
+       }
+   }
+   ```
+
+7. Write a program to print the difference of ending ranges of alphabets and numbers.
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           char ch1 = 'z';
+           char ch2 = '9';
+
+           char res = (char) (ch1 - ch2);
+
+           System.out.println("The Difference of " + ch1 + " and " + ch2 + " is: " + res);
+       }
+   }
+   ```
+
+8. Write a program to print the product of sum of first three vowel characters and difference of starting ranges of digit, lower case alphabet and sum of end ranges of digit lower case Alphabet
+
+   ```java
+   public class Solution {
+       public static void main(String[] args) {
+           char ch1 = 'A';
+           char ch2 = 'E';
+           char ch3 = 'I';
+
+           char ch4 = '0';
+           char ch5 = 'a';
+
+           char ch6 = '9';
+           char ch7 = 'z';
+
+           System.out.println("\n");
+
+           System.out.println("The sum of " + ch1 + "," + ch2 + "," + ch3 + " is: " + (ch1 + ch2 + ch3) + ". "
+                   + "\nThe difference of " + ch4 + "," + ch5 + " is: " + (ch4 - ch5) + ". " + "\nThe sum of " + ch6 + ","
+                   + ch7 + " is: " + (ch6 + ch7));
+
+           System.out.println("\n");
+
+           System.out.println("Product of " + (ch1 + ch2 + ch3) + " and " + (ch4 - ch5) + " and " + (ch6 + ch7) + " is: "
+                   + (((ch1 + ch2 + ch3) * (ch4 - ch5) * (ch6 + ch7))));
+       }
+   }
+   ```
+
+9. Write a program to print the character based on the ascii value. Let the value be 65.
+
+   ```java
+   public class Implicit_Casting {
+       public static void main(String[] args) {
+           char ch = 65;
+           System.out.println(ch);
+           System.out.println("The Character with the Ascii value of 65 is " + ch);
+       }
+   }
+   ```
+
+   ```java
+   public class Explicit_Casting {
+       public static void main(String[] args) {
+           int ch = 65;
+           char ch1 = (char) ch;
+           System.out.println("The Character with the Ascii value of " + ch + " is " + ch1);
+       }
+   }
+   ```
+
+10. Write a program to print the character with Ancii value of the sum of 1st and last digit characters.
+
+    ```java
+    public class Solution {
+        public static void main(String[] args) {
+            char ch1 = '0';
+            char ch2 = '9';
+            char res = (char) (ch1 + ch2);
+
+            System.out.println("The character is: " + res);
+        }
+    }
+    ```
+
+11. Write a program to print the character with Ancii value of the sum of starting and end ranges of UpperCase alphabets ( - ) minus the sum of starting and end range of lower case alphabets.
+
+    ```java
+    public class Solution {
+        public static void main(String[] args) {
+            char a = 'A';
+            char b = 'Z';
+
+            char c = 'a';
+            char d = 'z';
+
+            int sum = a + b;
+            int diff = c + d;
+
+            int res1 = sum - diff;
+
+            char res = (char) (sum - diff);
+
+            System.out.println(res1);
+            System.out.println("This is the result: " + res + ". as the number " + res1 + " is negative");
+        }
+    }
+    ```
