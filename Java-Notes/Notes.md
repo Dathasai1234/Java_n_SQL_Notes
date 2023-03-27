@@ -982,17 +982,10 @@ Example : Conditional Operator.
 
 ## List of Operators
 
-1. Arthematic operators
+1.  Arthematic operators
 
-2. \*(Multiplication)
-
-3. / (division)
-
-4. % (modulus)
-
-5. +(Addition).
-
-6. -(Substraction).
+    4.  / (division)
+    5.  % (modulus)
 
 ## + (Addition)
 
