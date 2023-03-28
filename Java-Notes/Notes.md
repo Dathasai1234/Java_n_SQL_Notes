@@ -982,10 +982,12 @@ Example : Conditional Operator.
 
 ## List of Operators
 
-1.  Arthematic operators
-
-    4.  / (division)
-    5.  % (modulus)
+1. Arthematic operators
+   1. +(Addition).
+   2. -(Minus or Subtraction).
+   3. \*(Multiplication).
+   4. / (division).
+   5. % (modulus).
 
 ## + (Addition)
 
@@ -1528,6 +1530,13 @@ i
    }
    ```
 
+   **OutPut**
+
+   ```vbnet
+   Sum of 1st three numbers is: 102 and
+   Sum of last three numbers is: 168
+   ```
+
 2. Write a program to print the product of sum of first three numbers and difference of last three numbers.
 
    ```java
@@ -1546,6 +1555,12 @@ i
    }
    ```
 
+   **OutPut**
+
+```vbnet
+The product of sum of 1st 3 numbers and difference of last three numbers are-7956
+```
+
 3. Write a program to print the difference of sum of 1st 4 numbers and product of last three numbers.
 
    ```java
@@ -1563,6 +1578,14 @@ i
            System.out.println("The Difference is: " + ((a + b + c + d) - (c - d - e)));
        }
    }
+   ```
+
+   **OutPut**
+
+   ```vbnet
+   Sum of 1st four numbers is: 158 and
+   Product of last three numbers is: 168840
+   The Difference is: 236
    ```
 
 4. Write the program to print the quotient of sum of 1st four numbers and difference of last two numbers.
@@ -1586,6 +1609,14 @@ i
    }
    ```
 
+   **OutPut**
+
+   ```vbnet
+   The Sum of 23,34,45,56 is: 158
+   and Difference of 56 and 67 is: -11
+   The Quotient of 158 and -11 is: -14
+   ```
+
 5. Write a program to print the sum of last three vowel characters.
 
    ```java
@@ -1598,6 +1629,12 @@ i
            System.out.println("Sum of last three vowels " + a + "," + b + "," + c + " is: " + (a + b + c));
        }
    }
+   ```
+
+   **OutPut**
+
+   ```vbnet
+   Sum of last three vowels I,O,U is: 237
    ```
 
 6. Write a program to print the sum of starting ranges of digit, upper case Alphabet. characters, lower case Alphabet characters.
@@ -1616,6 +1653,12 @@ i
    }
    ```
 
+   **OutPut**
+
+   ```vbnet
+   Sum of 0,A,a is: ?
+   ```
+
 7. Write a program to print the difference of ending ranges of alphabets and numbers.
 
    ```java
@@ -1629,6 +1672,12 @@ i
            System.out.println("The Difference of " + ch1 + " and " + ch2 + " is: " + res);
        }
    }
+   ```
+
+   **OutPut**
+
+   ```vbnet
+   The Difference of z and 9 is: A
    ```
 
 8. Write a program to print the product of sum of first three vowel characters and difference of starting ranges of digit, lower case alphabet and sum of end ranges of digit lower case Alphabet
@@ -1660,6 +1709,17 @@ i
    }
    ```
 
+   **OutPut**
+
+   ```vbnet
+   The sum of A,E,I is: 207.
+   The difference of 0,a is: -49.
+   The sum of 9,z is: 179
+
+
+   Product of 207 and -49 and 179 is: -1815597
+   ```
+
 9. Write a program to print the character based on the ascii value. Let the value be 65.
 
    ```java
@@ -1672,6 +1732,13 @@ i
    }
    ```
 
+   **OutPut**
+
+   ```vbnet
+   A
+   The Character with the Ascii value of 65 is A
+   ```
+
    ```java
    public class Explicit_Casting {
        public static void main(String[] args) {
@@ -1680,6 +1747,12 @@ i
            System.out.println("The Character with the Ascii value of " + ch + " is " + ch1);
        }
    }
+   ```
+
+   **OutPut**
+
+   ```vbnet
+   The Character with the Ascii value of 65 is A
    ```
 
 10. Write a program to print the character with Ancii value of the sum of 1st and last digit characters.
@@ -1694,6 +1767,12 @@ i
             System.out.println("The character is: " + res);
         }
     }
+    ```
+
+    **OutPut**
+
+    ```vbnet
+    The character is: i
     ```
 
 11. Write a program to print the character with Ancii value of the sum of starting and end ranges of UpperCase alphabets ( - ) minus the sum of starting and end range of lower case alphabets.
@@ -1718,4 +1797,11 @@ i
             System.out.println("This is the result: " + res + ". as the number " + res1 + " is negative");
         }
     }
+    ```
+
+    **OutPut**
+
+    ```vbnet
+    -64
+    This is the result: ?. as the number -64 is negative
     ```
