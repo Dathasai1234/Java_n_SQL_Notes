@@ -1817,7 +1817,9 @@ i
 Relational operators are used to compare the 2 data types which will give input as number data.
 
 - Output of the relational data is always Boolean data.
+
 - Comparison will happen from LHS to RHS.
+
 - They are.
 
   - \>
@@ -2110,6 +2112,259 @@ Relational operators are used to compare the 2 data types which will give input 
 
      ```vbnet
      true
+     ```
+
+---
+
+# Logical Operators
+
+(Boolean input) → (Boolean output)
+
+There are 3 types of logical operators.
+
+1. `&&` (Logical AND)
+2. `||` (Logical OR)
+3. `!` (Logical NOT)
+
+   ***
+
+   ## 1. Logical AND (&&)
+
+   - In logical AND, all cases should be satisfied.
+
+   - Truth table for `&&` operator.
+
+     | input 1 | input 2 | output |
+     | ------- | ------- | ------ |
+     | T       | T       | T      |
+     | T       | F       | F      |
+     | F       | T       | F      |
+     | F       | F       | F      |
+
+   1. Write a program to check whether the given number is greater than 5, less than 10.
+
+   ```java
+   public class Solution {
+     public static void main(String[] args) {
+       int a = ;
+       boolean b = (a > 5 && a < 10>);
+       System.out.println(b);
+     }
+   }
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+   ***
+
+   ## 2. Logical OR (||)
+
+   - In `OR` operator any one case should be satisfied.
+
+   - Truth table for `||` operator.
+
+     | input 1 | input 2 | output |
+     | ------- | ------- | ------ |
+     | T       | T       | T      |
+     | T       | F       | T      |
+     | F       | T       | T      |
+     | F       | F       | F      |
+
+   ## 3. Logical NOT (!)
+
+   - NOT operator is an opposite operator.
+
+   - Truth table for `!` operator.
+
+     | input 1 | ! input 1 |
+     | ------- | --------- |
+     | T       | F         |
+     | F       | T         |
+
+   ***
+
+# `⭐Ternary Operator`
+
+- It Accepts 3 inputs.
+
+  ## Syntax
+
+  > ## (operand 1) ? operand 2 : operand 3 ;
+
+  - Operand 1 is a condition statement. Where the output is a Boolean.
+  - operand 2 - These statements run only when the condition is true. The output of operand 1 is true.
+  - operand 3 - These statements only run when the condition is false. The output of operand 1 is false.
+
+  ***
+
+  ## Programming problems.
+
+  1. Write a program to check and print given number is `>` 100 or not.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          int a = 100;
+          String s = (a > 100) ? "great" : "small";
+
+          System.out.println(a + " is " + "than 100.");
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     100 is small than 100
+     ```
+
+  2. Write a program to check and print whether it is between 100 150.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          int a = 150;
+          String s = (a >= 100 && a <= 150) ? a + " is between 100 and 150" : a + " is not between 100 and 150";
+
+          System.out.println(s);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     150 is between 100 and 150
+     ```
+
+  3. Write a program to check whether the given number is positive or not.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          int a = 9;
+          String s = (a < 0) ? "It is negative." : "It is positive.";
+
+          System.out.println(s);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     It is positive
+     ```
+
+  4. Write a program to check whether the given number is even or odd.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          int a = 5;
+          String s = (a % 2 != 0) ? "is odd" : "is even";
+          System.out.println(a + " " + s);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     5 is odd
+     ```
+
+  5. Write a program to check whether the given character is uppercase alphabet or not.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          char ch = 'A';
+          String s = (ch >= 65 && ch <= 90) ? " is an upper case character." : " is a not an upper case character.";
+
+          System.out.println(ch + " " + s);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     A is an upper case character
+     ```
+
+     ***
+
+  ## Assignment problems.
+
+  1. Write a program to check whether a given character is lowercase alphabet or not.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          char a = 'a';
+
+          String s = ((a >= 97) && (a <= 122)) ? " is a lowercase Alphabet" : " is not a lowercase Alphabet ";
+          System.out.println(a + s);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     a is a lowercase Alphabet
+     ```
+
+  2. Write a program to check whether the given input is alphabet or not.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          char a = 'Z';
+
+          String s = ((a >= 65) && (a <= 90)) ? " is an UpperCase Alphabet" : " is not an UpperCase Alphabet ";
+          System.out.println(a + s);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     Z is an UpperCase Alphabet
+     ```
+
+  3. Write a program to check whether the given character is digit or not.
+
+     ```java
+      public class Solution {
+        public static void main(String[] args) {
+          char a = '0';
+
+          String b = (a >= 48 && a <= 57) ? " is a digit" : " is not a digit";
+
+          System.out.println(a + b);
+        }
+      }
+
+     ```
+
+     **Output**
+
+     ```vbnet
+     0 is a digit
      ```
 
 ---
