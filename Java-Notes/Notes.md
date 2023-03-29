@@ -125,6 +125,11 @@
 
 ---
 
+- [Relational Operators](#relational-operators)
+  - [< and > Coding problems](#programming-problems-on--and--operators)
+  - [<= and >= Coding problems](#programming-problems-on--and--operators)
+  - [Assignment problems](#assignment-problems)
+
 # Java Basics
 
 ## Defination.
@@ -1511,7 +1516,7 @@ i
 
 # Programming Questions
 
-1. Write a program to print the sum of 1st three numbers and last three numbers in the given data.
+1. Write a program to print the sum of first three numbers and last three numbers in the given data.
 
    ```java
    public class Solution {
@@ -1557,9 +1562,9 @@ i
 
    **OutPut**
 
-```vbnet
-The product of sum of 1st 3 numbers and difference of last three numbers are-7956
-```
+   ```vbnet
+   The product of sum of 1st 3 numbers and difference of last three numbers are-7956
+   ```
 
 3. Write a program to print the difference of sum of 1st 4 numbers and product of last three numbers.
 
@@ -1716,7 +1721,6 @@ The product of sum of 1st 3 numbers and difference of last three numbers are-795
    The difference of 0,a is: -49.
    The sum of 9,z is: 179
 
-
    Product of 207 and -49 and 179 is: -1815597
    ```
 
@@ -1805,3 +1809,307 @@ The product of sum of 1st 3 numbers and difference of last three numbers are-795
     -64
     This is the result: ?. as the number -64 is negative
     ```
+
+---
+
+# Relational operators.
+
+Relational operators are used to compare the 2 data types which will give input as number data.
+
+- Output of the relational data is always Boolean data.
+- Comparison will happen from LHS to RHS.
+- They are.
+
+  - \>
+  - <
+  - \>=
+  - <=
+  - ==
+  - !=
+
+  ***
+
+  ## Programming problems on < and > operators.
+
+  1. Write a program to check `greatest among` the given inputs. Let inputs be `10, 9`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+          int a = 10;
+          int b = 9;
+          boolean c = a > b;
+
+          System.out.println("a is greater than b : " + c);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     a is greater than b : true
+     ```
+
+  2. Write a program to check `smallest number` in the Among 2 numbers.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+        int a = 10;
+        int b = 19;
+        boolean a = a < b;
+        System.out.println("a is less than b : " + a);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     a is less than b : true
+     ```
+
+  ***
+
+  ## Programming problems on <= and >= operators.
+
+  1. Write a program to check whether the given inputs are `equal or Great or less`? Let the inputs are A and A.
+
+     ```java
+       public class Solution {
+         public static void main(String[] args) {
+            char a = 'A';
+            char b = 'a';
+            int c = 67;
+            boolean d = a >= a;
+            boolean e = a <= a;
+
+            boolean f = a >= b;
+            boolean g = a <= b;
+
+            boolean h = a >= c;
+            boolean i = a <= c;
+
+            System.out.println(d);
+            System.out.println(e);
+
+            System.out.println(f);
+            System.out.println(g);
+
+            System.out.println(h);
+            System.out.println(i);
+        }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     true
+     true
+     false
+     true
+     false
+     true
+     ```
+
+  2. Write a program to check whether the given input is `>=` remaining 3 inputs.
+
+     ```java
+       public class Solution {
+         public static void main(String[] args) {
+           char ch1 = 'O';
+           char ch2 = 'o';
+           char ch3 = '0';
+
+           boolean b1 = ch1 >= ch1;
+           boolean b2 = ch1 >= ch2;
+           boolean b3 = ch1 >= ch3;
+
+           System.out.println(b1);
+           System.out.println(b2);
+           System.out.println(b3);
+         }
+       }
+     ```
+
+     **Output**
+
+     ```vbnet
+     true
+     false
+     true
+     ```
+
+  3. Write a program to check whether the given inputs are `equal or not`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+          int a = 90;
+          int b = 10;
+
+          boolean c = a == b;
+          boolean d = a != b;
+
+          System.out.println(c);
+          System.out.println(d);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     false
+     true
+     ```
+
+  ***
+
+  ## Assignment problems.
+
+  1. Write a program to check a = `90`. Weather the given input is `even or not`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+          int a = 90;
+          boolean b = a % 2 == 0;
+          System.out.println(b);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     true
+     ```
+
+  2. Write a program to check whether the given input is `even or not`. The input is a = `90`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+        int a = 91;
+        boolean b = a % 2 == 0;
+
+        System.out.println(b);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     false
+     ```
+
+  3. Write a program to check whether the given character ASCII value is `odd or not`. Let the input character be `'Z'`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+        char a = 'Z';
+        boolean b = (a % 2 == 0);
+
+        System.out.println("Ascii value of " + a + " is " + (int) a + " which is: " + b);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     Ascii value of Z is 90 which is: true
+     ```
+
+  4. Write a program to check whether the given character ASCII value is `odd or not`. Let the character be Uppercase `Z`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+        char a = 'Z';
+        boolean b = (a % 2 == 1);
+
+        System.out.println("Ascii value of " + a + " is " + (int) a + " which is: " + b);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     Ascii value of Z is 90 which is: false
+     ```
+
+  5. Write a program to check the sum of starting and ending ranges of digit characters is `even or not`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+          char ch1 = '0';
+          char ch2 = '9';
+
+          int i = ch1 + ch2;
+          boolean bool = i % 2 == 0;
+
+          System.out.println(bool);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     false
+     ```
+
+  6. Sum of Starting ranges of upper and lower case alphabets is `odd or not`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+          char ch1 = 'A';
+          char ch2 = 'a';
+
+          int i = ch1 + ch2;
+          boolean bool = i % 2 == 0;
+
+          System.out.println(bool);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     true
+     ```
+
+  7. Write a program to check the difference of all starting ranges of alphabets and digits is `odd or not`.
+
+     ```java
+     public class Solution {
+       public static void main(String[] args) {
+          char ch2 = 'a';
+          char ch1 = 'A';
+          char ch3 = '0';
+
+          int i = ch1 - ch2 - ch3;
+          boolean bool = i % 2 == 0;
+
+          System.out.println(bool);
+       }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     true
+     ```
+
+---
