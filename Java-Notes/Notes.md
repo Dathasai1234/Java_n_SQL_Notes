@@ -130,6 +130,22 @@
   - [<= and >= Coding problems](#programming-problems-on--and--operators)
   - [Assignment problems](#assignment-problems)
 
+---
+
+- [Logical Operators](#logical-operators)
+  - [1. &&](#1-logical-and)
+  - [2. ||](#2-logical-or)
+  - [3. !](#3-logical-not)
+
+---
+
+- [Ternary Operator](#⭐ternary-operator)
+  - [Syntax](#syntax)
+  - [Programming Problems](#programming-problems)
+  - [Assignment Problems](#assignment-problems-ternary-operators)
+
+---
+
 # Java Basics
 
 ## Defination.
@@ -2304,7 +2320,7 @@ There are 3 types of logical operators.
 
      ***
 
-  ## Assignment problems.
+  ## Assignment problems Ternary operators.
 
   1. Write a program to check whether a given character is lowercase alphabet or not.
 
