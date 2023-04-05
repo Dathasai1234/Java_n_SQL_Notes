@@ -2148,7 +2148,9 @@ Relational operators are used to compare the 2 data types which will give input 
 There are 3 types of logical operators.
 
 1. `&&` (Logical AND)
+
 2. `||` (Logical OR)
+
 3. `!` (Logical NOT)
 
    ***
@@ -2239,7 +2241,6 @@ There are 3 types of logical operators.
           System.out.println(a + " is " + "than 100.");
         }
       }
-
      ```
 
      **Output**
@@ -2259,7 +2260,6 @@ There are 3 types of logical operators.
           System.out.println(s);
         }
       }
-
      ```
 
      **Output**
@@ -2279,7 +2279,6 @@ There are 3 types of logical operators.
           System.out.println(s);
         }
       }
-
      ```
 
      **Output**
@@ -2298,7 +2297,6 @@ There are 3 types of logical operators.
           System.out.println(a + " " + s);
         }
       }
-
      ```
 
      **Output**
@@ -2318,7 +2316,6 @@ There are 3 types of logical operators.
           System.out.println(ch + " " + s);
         }
       }
-
      ```
 
      **Output**
@@ -2342,7 +2339,6 @@ There are 3 types of logical operators.
           System.out.println(a + s);
         }
       }
-
      ```
 
      **Output**
@@ -2358,17 +2354,17 @@ There are 3 types of logical operators.
         public static void main(String[] args) {
           char a = 'Z';
 
-          String s = ((a >= 65) && (a <= 90)) ? " is an UpperCase Alphabet" : " is not an UpperCase Alphabet ";
+          String s = ((a >= 65 && a <= 90) || (a >= 97 && a <= 122)) ? " is an Alphabet"
+                     : " is not an Alphabet ";
           System.out.println(a + s);
         }
       }
-
      ```
 
      **Output**
 
      ```vbnet
-     Z is an UpperCase Alphabet
+     Z is an Alphabet
      ```
 
   3. Write a program to check whether the given character is digit or not.
@@ -2383,7 +2379,6 @@ There are 3 types of logical operators.
           System.out.println(a + b);
         }
       }
-
      ```
 
      **Output**
@@ -2410,7 +2405,6 @@ There are 3 types of logical operators.
          System.out.println(s);
        }
      }
-
    ```
 
    **Output**
@@ -2432,7 +2426,6 @@ There are 3 types of logical operators.
          System.out.println(s);
        }
      }
-
    ```
 
    **Output**
@@ -2455,176 +2448,170 @@ There are 3 types of logical operators.
 
   ## Programming problems on Extractor and removal.
 
-  1.  Write a program to extract last digits of the given numbers and do the sum of last digits. Let the Input 1 be `5349`, Input 2 be `2916`.
+  1. Write a program to extract last digits of the given numbers and do the sum of last digits. Let the Input 1 be `5349`, Input 2 be `2916`.
 
-      ```java
-      public class Solution {
-       public static void main(String[] args) {
-         int a = 5349;
-         int b = 2916;
-         int c = a % 10;
-         int d = b % 10;
+     ```java
+     public class Solution {
+      public static void main(String[] args) {
+        int a = 5349;
+        int b = 2916;
+        int c = a % 10;
+        int d = b % 10;
 
-         int sum = c + d;
-         System.out.println("Sum of " + c + " and " + d + " is: " + sum);
+        int sum = c + d;
+        System.out.println("Sum of " + c + " and " + d + " is: " + sum);
+      }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     Sum of 9 and 6 is: 15
+     ```
+
+  2. Write a program to sum the last digits of given character Ascii value and check whether the sum is even or not. Let the 2 characters be uppercase `A` and smaller case `a`.
+
+     ```java
+     public class Solution {
+      public static void main(String[] args) {
+        char ch1 = 'A';
+        char ch2 = 'a';
+
+        int i = ch1 % 10;
+        int j = ch2 % 10;
+
+        int sum = i + j;
+        String s = (sum % 2 == 0) ? (" is even") : (" is odd");
+        System.out.println("Sum: " + sum + " is " + s);
+
+      }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     Sum: 12 is  is even
+     ```
+
+  3. Write a program to check the product of sum of last digits of the given character and difference of last 2 digits of the given character. `z` and `y`.
+
+     ```java
+     public class Solution {
+      public static void main(String[] args) {
+                char ch1 = 'z';
+        char ch2 = 'y';
+
+        int a = ch1 % 10;
+        int b = ch2 % 10;
+
+        int sum = a + b;
+        int diff = a - b;
+
+        int pro = sum * diff;
+        System.out.println("The Product of " + sum + " and " + diff + " is " + pro);
+      }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     The Product of 3 and 1 is 3
+     ```
+
+  4. Write a program to print the sum of product of last 2 digits and reminder of last 2 digits of a given character.
+
+     ```java
+     public class Solution {
+         public static void main(String[] args) {
+         char ch1 = 'z'; // 122
+
+         int a = ch1 % 100; // 22
+
+         int b = a % 10; // 2
+         int c = a / 10; // 2
+
+         int pro = b \* c; // 4
+         int rem = b / c; // 0
+
+         int sum = pro + rem; // 4
+
+         System.out.println("The product of last two digits is: " + pro + " and remainder of last two digits is: " + rem);
+
+         System.out.println("The sum of product: " + pro + " and remainder " + rem + " is: " + sum);
        }
+     }
+     ```
+
+     **Output**
+
+     ```vbnet
+     The product of last two digits is: 4 and remainder of last two digits is: 1
+     The sum of product: 4 and remainder 1 is: 5
+     ```
+
+  5. Write a program to check the sum of first and last 2 digits is even or odd.
+
+     ```java
+     public class Solution {
+      public static void main(String[] args) {
+       char ch1 = 'z'; // 122
+       int a = ch1 % 100; // 22
+
+       int b = a % 10; // 2
+       int c = a / 10; // 2
+
+       int d = ch1 / 100; // 1
+
+       int i = d + (b + c);
+
+       String s = (i % 2 == 0)
+               ? ("The sum of first digit " + d + " and last two digits " + b + " and " + c + " is " + i
+                       + " Which is even.")
+               : ("The sum of first digit " + d + " and last two digits " + b + " and " + c + " is " + i
+                       + " Which is odd.");
+
+       System.out.println(s);
       }
+     }
+     ```
 
-      ```
+     **Output**
 
-      **Output**
+     ```vbnet
+     The sum of first digit 1 and last two digits 2 and 2 is 5 Which is odd.
+     ```
 
-      ```vbnet
-      Sum of 9 and 6 is: 15
-      ```
+  6. Write a program to check whether the output is even or odd. Output is sum of the digits of a character. Let the output be lowercase y.
 
-  2.  Write a program to sum the last digits of given character Ascii value and check whether the sum is even or not. Let the 2 characters be uppercase `A` and smaller case `a`.
+     ```java
+     public class Solution {
+      public static void main(String[] args) {
+               int a = 'z'; // 122
 
-      ```java
-      public class Solution {
-       public static void main(String[] args) {
-         char ch1 = 'A';
-         char ch2 = 'a';
+       int b = a % 100; // 22
 
-         int i = ch1 % 10;
-         int j = ch2 % 10;
+       int b_1 = b % 10; // 2
+       int b_2 = b / 10; // 2
 
-         int sum = i + j;
-         String s = (sum % 2 == 0) ? (" is even") : (" is odd");
-         System.out.println("Sum: " + sum + " is " + s);
+       int c = a / 100;
 
-       }
+       int sum = (c + b_2 + b_1);
+
+       String s = (sum % 2 == 0) ? ("sum of digits is " + sum + " which is even") : ("sum of digits is " + sum + " which is odd");
+
+       System.out.println(s);
       }
+     }
+     ```
 
-      ```
+     **Output**
 
-      **Output**
-
-      ```vbnet
-      Sum: 12 is  is even
-      ```
-
-  3.  Write a program to check the product of sum of last digits of the given character and difference of last 2 digits of the given character. `z` and `y`.
-
-      ```java
-      public class Solution {
-       public static void main(String[] args) {
-                 char ch1 = 'z';
-         char ch2 = 'y';
-
-         int a = ch1 % 10;
-         int b = ch2 % 10;
-
-         int sum = a + b;
-         int diff = a - b;
-
-         int pro = sum * diff;
-         System.out.println("The Product of " + sum + " and " + diff + " is " + pro);
-       }
-      }
-
-      ```
-
-      **Output**
-
-      ```vbnet
-      The Product of 3 and 1 is 3
-      ```
-
-  4.  Write a program to print the sum of product of last 2 digits and reminder of last 2 digits of a given character.
-
-      ```java
-      public class Solution {
-          public static void main(String[] args) {
-          char ch1 = 'z'; // 122
-
-          int a = ch1 % 100; // 22
-
-          int b = a % 10; // 2
-          int c = a / 10; // 2
-
-          int pro = b \* c; // 4
-          int rem = b / c; // 0
-
-          int sum = pro + rem; // 4
-
-          System.out.println("The product of last two digits is: " + pro + " and remainder of last two digits is: " + rem);
-
-          System.out.println("The sum of product: " + pro + " and remainder " + rem + " is: " + sum);
-        }
-      }
-
-      ```
-
-      **Output**
-
-      ```vbnet
-      The product of last two digits is: 4 and remainder of last two digits is: 1
-      The sum of product: 4 and remainder 1 is: 5
-      ```
-
-  5.  Write a program to check the sum of first and last 2 digits is even or odd.
-
-      ```java
-      public class Solution {
-       public static void main(String[] args) {
-        char ch1 = 'z'; // 122
-        int a = ch1 % 100; // 22
-
-        int b = a % 10; // 2
-        int c = a / 10; // 2
-
-        int d = ch1 / 100; // 1
-
-        int i = d + (b + c);
-
-        String s = (i % 2 == 0)
-                ? ("The sum of first digit " + d + " and last two digits " + b + " and " + c + " is " + i
-                        + " Which is even.")
-                : ("The sum of first digit " + d + " and last two digits " + b + " and " + c + " is " + i
-                        + " Which is odd.");
-
-        System.out.println(s);
-       }
-      }
-
-      ```
-
-      **Output**
-
-      ```vbnet
-      The sum of first digit 1 and last two digits 2 and 2 is 5 Which is odd.
-      ```
-
-  6.  Write a program to check whether the output is even or odd. Output is sum of the digits of a character. Let the output be lowercase y.
-
-      ```java
-      public class Solution {
-       public static void main(String[] args) {
-                int a = 'z'; // 122
-
-        int b = a % 100; // 22
-
-        int b_1 = b % 10; // 2
-        int b_2 = b / 10; // 2
-
-        int c = a / 100;
-
-        int sum = (c + b_2 + b_1);
-
-        String s = (sum % 2 == 0) ? ("sum of digits is " + sum + " which is even") : ("sum of digits is " + sum + " which is odd");
-
-        System.out.println(s);
-       }
-      }
-
-      ```
-
-      **Output**
-
-      ```vbnet
-      sum of digits is 5 which is odd
-      ```
+     ```vbnet
+     sum of digits is 5 which is odd
+     ```
 
 ---
 
