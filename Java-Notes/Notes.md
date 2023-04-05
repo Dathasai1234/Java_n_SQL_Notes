@@ -2398,7 +2398,7 @@ There are 3 types of logical operators.
          char b = 'B';
 
          int c = a / b;
-         ind d = a % b;
+         int d = a % b;
 
          String s = ((c + d) % 2 == 0) ? " is even" : " is odd";
 
@@ -2421,7 +2421,7 @@ There are 3 types of logical operators.
          char a = 'C';
          int b = (int) a;
 
-         String s = (b % 2 == 0) ? ((char) (b - 2)) : ((char) (b - 2));
+         char s = (b % 2 == 0) ? ((char) (b - 2)) : ((char) (b - 1));
 
          System.out.println(s);
        }
@@ -2616,3 +2616,160 @@ There are 3 types of logical operators.
 ---
 
 # Nested ternary operator problems.
+
+1. Write a program to check a greatest number In the given `23`, `53`, `153` use one ternary to store the output.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 23;
+        int b = 53;
+        int c = 153;
+
+        String s = (a > b && a > c)
+                ? (a + " is greater than " + b + " and " + c)
+                : ((b > c) ? (b + " is greater than " + a + " and " + c) : (c + " is greater than " + a + " and " + b));
+
+        System.out.println(s);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   153 is greater than 23 and 53
+   ```
+
+2. Write a program to check the greatest number among 4 numbers `92`, `42`, `192`, `132`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 92;
+        int b = 42;
+        int c = 192;
+        int d = 132;
+
+        String s = ((a > b) && (a > c) && (a > d)) ?
+        (a + " is greatest among " + b + ", " + c + ", " + " and " + d):
+        (((b > c) && (b > d)) ? (b + " is greatest among " + a + ", " + c + ", " + " and " + d):
+        ((c > d) ? (c + " is greatest among " + a + ", " + b + ", " + " and " + d):
+        (d + " is greatest among " + a + ", " + b + ", " + " and " + c)));
+
+        System.out.println(s);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+3. Write a program to check smallest number in the given values `23`, `33`, `133`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+4. Write a program to print given number `positive` and `even` or `not`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+5. Write a program to check whether the given number is `divisible by 5` or not. If `it is divisible` by 5, check whether it is `even or odd`. If it is `not divisible`, check the given number is `positive or not`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+6. Write a program to check whether the given number is `even`, `odd`, `neutral`. Use ternary operator.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+7. Write a program to check given character last digit is `even or odd`. If it is even check whether it is `divisible by 6` or not.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+8. Write a program to check whether the given character is ascii value is divisible by 2 and 3. If it is `divisible by 2 and 3`, check whether it is `divisible by 6`. If it is `not divisible by 2 and 3`, check whether it is `divisible by 4 or not`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+
+   ```
+
+9.
