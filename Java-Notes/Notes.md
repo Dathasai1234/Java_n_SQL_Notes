@@ -155,6 +155,27 @@
 
 ---
 
+- [Increment and Decrement Operator](#increment-and-decrement-operator)
+
+  - [Increment Operator](#increment-operator)
+
+    - [Post Increment and Pre Increment Operator](#post-increment-and-pre-increment)
+
+  - [Decrement Operator](#decrement-operator)
+    - [Post Decrement and Pre Decrement Operator](#post-decremnet-and-pre-decremnet)
+
+- [Assignment problems - increment and decrement operators.](#assignment-problems-for-increment-and-decrement-operations)
+
+---
+
+- [Contraol Statements](#control-statements)
+  - [Conditional statements.](#conditional-statements)
+    - [if](#if)
+    - [if else](#if-else)
+    - [else if ladder](#else-if-ladder)
+
+---
+
 # Java Basics
 
 ## Defination.
@@ -2802,6 +2823,591 @@ There are 3 types of logical operators.
 
    ```vbnet
    ascii value of B is 66 which is divisible by 2, 3, and 6
+   ```
+
+---
+
+# Increment and Decrement operator.
+
+This operator helps us to increase or decrease the value by one.
+
+They are segregated into 2 types.
+
+1. Increment operator.
+2. Decrement operator.
+
+---
+
+## Increment operator. (`++`)
+
+It is used to increase the value by 1.
+
+There are 2 types of increment operator based on their position.
+
+1. Post increment. (`a++`)
+2. Pre increment. (`++a`)
+
+---
+
+## Post increment and Pre increment.
+
+- Example
+
+  ```java
+  public class Solution {
+    public static void main(String[] args) {
+
+    // post increment
+      int a = 20;
+      int b = a++;
+      System.out.println(a); // 21
+      System.out.println(b); // 20
+
+    // pre increment
+      int c = ++a;
+      System.out.println(a); // 22
+      System.out.println(c); // 22
+    }
+  }
+
+  ```
+
+  **Output**
+
+  ```vbnet
+  21
+  20
+  22
+  22
+  ```
+
+---
+
+1. Write a program to display 4 pre increment and post increment using the value `a = 46`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+
+        // post increment
+        int a = 46;
+        int b = a++;
+        System.out.println(a); // 47
+        System.out.println(b); // 46
+
+        // pre increment
+        int c = ++a;
+        System.out.println(a);  // 48
+        System.out.println(c);  // 48
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   47
+   46
+   48
+   48
+   ```
+
+2. Write a program to print the sum of pre increment and post increment of given number. Input is `36`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 36;
+        int b = ++a;
+        int c = a++;
+
+        int sum = b + c;
+        System.out.println(sum); // 74
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   74
+   ```
+
+3. Write a program to print a value which is sum of its own post increment and pre increment. Let the value `a = 92`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 92;
+        int b = (++a) + (a++); // 92 + 94
+        System.out.println(b); // 186
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   186
+   ```
+
+4. Write a program to print the `sum` of the given expression. Let the expression be.
+
+   ```
+   (a) + (++a) + a + (a++) + a
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 30;
+        int b = (a) + (++a) + a + (a++) + a ; // 13 + 14 + 14 + 14 + 15
+        System.out.println(b);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   70
+   ```
+
+5. Write a program to print the `difference` of given expression. The expression be.
+
+   ```
+   (a++) - (++b) - b - (++a) - (b++) - a - b
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 10;
+        int b = 9;
+        int c = (a++) - (++b) - b - (++a) - (b++) - a - b ; // 10 - 10 - 10 - 12 - 10 - 12 - 11
+        System.out.println(b);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   -55
+   ```
+
+---
+
+## Decrement operator. (`--`)
+
+It is used to decrease the value by one ane.
+
+There are 2 types.
+
+1. Post decrement. (`a--`)
+2. Pre decrement. (`--a`)
+
+## Post decremnet and Pre decremnet.
+
+- Example
+
+  ```java
+  public class Solution {
+    public static void main(String[] args) {
+
+    // post decrement
+      int a = 92;
+      int b = a--;
+      System.out.println(a); // 91
+      System.out.println(b); // 92
+
+    // pre decrement
+      int c = --a;
+      System.out.println(a); // 90
+      System.out.println(c); // 90
+    }
+  }
+
+  ```
+
+  **Output**
+
+  ```vbnet
+  91
+  92
+  90
+  90
+  ```
+
+---
+
+1. Write a program to print the sum of post decrement and pre decrement values. Let the input Be `36`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 36;
+        int b = a--;
+        int c = --a;
+
+        int sum = b + c;
+        System.out.println(sum);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   70
+   ```
+
+2. Write a program to print the output of the given expression. Let the inputs be `a = 74` and `b = 7`.
+
+   ```
+   (a--) + (a--) + (b--) + (--b) + (b) + (--b) + (a--)
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 74;
+        int b = 7;
+
+        int exp = (a--) + (a--) + (b--) + (--b) + (b) + (--b) + (a--);
+
+        System.out.println(exp);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   240
+   ```
+
+3. Write a program to print the output of given expression. Let the inputs be `a = 3`, `b = 4`, `c = 2`.
+
+   ```
+   (a--) * (--b) - (++c) + (a++) / (b++) * (c--)
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        int b = 4;
+        int c = 2;
+
+        int exp = (a--) * (--b) - (++c) + (a++) / (b++) * (c--);
+
+        System.out.println(exp);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   6
+   ```
+
+---
+
+## Assignment problems for increment and decrement operations.
+
+Inputs for all the assignment problems be
+`a = 3,
+b = 4,
+c = 2`
+
+1. Write a program to print the output of given expression.
+
+   ```
+   (a++) - (--b) + (++c) * (a++) / (b++) + (c--)
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        int b = 4;
+        int c = 2;
+
+        int exp = (a++) - (--b) + (++c) * (a++) / (b++) + (c--);
+
+        System.out.println(exp);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   7
+   ```
+
+2. Write a program to print the output of given expression.
+
+   ```
+   (b--) + (--c) * (++a) / (a--) + (c--) * (b)
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        int b = 4;
+        int c = 2;
+
+        int exp = (b--) + (--c) * (++a) / (a--) + (c--) * (b);
+
+        System.out.println(exp);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   8
+   ```
+
+3. Write a program to print the output of given expression.
+
+   ```
+   (c--) * (c++) * (c--) * (b--) / (a)
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        int b = 4;
+        int c = 2;
+
+        int exp = (c--) * (c++) * (c--) * (b--) / (a);
+
+        System.out.println(exp);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   5
+   ```
+
+4. Write a program to print the output of given expression.
+
+   ```
+   (--a) - (--b) * (++c) / (c--) + (b++) * (b)
+   ```
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        int b = 4;
+        int c = 2;
+
+        int exp = (--a) - (--b) * (++c) / (c--) + (b++) * (b);
+
+        System.out.println(exp);
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   11
+   ```
+
+---
+
+# Control statements.
+
+Statements which are used to control the execution flow.
+
+There are 2 types.
+
+1. Conditional statements.
+2. Looping statements.
+
+---
+
+## Conditional statements.
+
+The statements which are used to do the validation and based on the validation the decision will be made. There are 4 types.
+
+1. `if`
+2. `if else`
+3. `else if ladder`
+4. `switch`
+
+---
+
+## if
+
+### Syntax
+
+> if(condition) {
+>
+>       truth block
+>
+> }
+>
+> Nextline / block
+
+---
+
+1. Write a program to check given number is divisible by 2. If it is divisible by 2 or not, print the number is even.Use `if block`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 20;
+
+        if(a % 2 == 0) {
+          System.out.println(a + " is even");
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   20 is even
+   ```
+
+2. Write a program to given number is positive or not using `if block`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        if(a > 0) {
+          System.out.println(a + " is positive");
+        }
+        System.out.println(a + " is negative");
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   3 is positive
+   3 is negative
+   ```
+
+   > `Note: `
+   > Even it is positive, it will print negative.
+
+---
+
+## if else
+
+### Syntax
+
+> if(condition) {
+>
+>       truth block
+>
+> }
+> else {
+>
+>       False block
+>
+> }
+
+---
+
+1. Write a program to check given number is positive or not. Use `if else`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+        if(a > 0) {
+          System.out.println(a + " is positive");
+        } else {
+          System.out.println(a + " is negative");
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   3 is positive
+   ```
+
+   > `Note: `
+   > We cannot add more than one condition, so this is a drawback here.
+
+---
+
+## else if ladder
+
+### Syntax
+
+> if(condition) {
+>
+> } else if(condition) {
+>
+> } else if(condition) {
+>
+> } else {
+>
+> }
+>
+> Nextline / block
+
+---
+
+1. Write a program to given number is `positive` or `negative` or `neutral`.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 0;
+        if(a > 0) {
+            System.out.println(a + " is Positive");
+        } else if(a < 0) {
+            System.out.println(a + " is Negative");
+        } else {
+            System.out.println(a + " is Neutral");
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   0 is Neutral
    ```
 
 ---
