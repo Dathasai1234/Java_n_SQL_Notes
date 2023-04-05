@@ -2667,7 +2667,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   192 is greatest among 92, 42,  and 132
    ```
 
 3. Write a program to check smallest number in the given values `23`, `33`, `133`.
@@ -2675,7 +2675,15 @@ There are 3 types of logical operators.
    ```java
     public class Solution {
       public static void main(String[] args) {
+        int a = 23;
+        int b = 33;
+        int c = 133;
 
+        String s = (a < b && a < c)
+                ? (a + " is smaller than " + b + " and " + c)
+                : ((b < c) ? (b + " is smaller than " + a + " and " + c) : (c + " is smaller than " + a + " and " + b));
+
+        System.out.println(s);
       }
     }
 
@@ -2684,7 +2692,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   23 is smaller than 33 and 133
    ```
 
 4. Write a program to print given number `positive` and `even` or `not`.
@@ -2692,7 +2700,12 @@ There are 3 types of logical operators.
    ```java
     public class Solution {
       public static void main(String[] args) {
+        int a = 2;
 
+        String s = (a > 0) ? ((a % 2 == 0) ? (a + " is positive and even") : (a + " is positive and odd"))
+                : (a + " is negative");
+
+        System.out.println(s);
       }
     }
 
@@ -2701,7 +2714,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   2 is positive and even
    ```
 
 5. Write a program to check whether the given number is `divisible by 5` or not. If `it is divisible` by 5, check whether it is `even or odd`. If it is `not divisible`, check the given number is `positive or not`.
@@ -2709,7 +2722,12 @@ There are 3 types of logical operators.
    ```java
     public class Solution {
       public static void main(String[] args) {
+        int a = 10;
 
+        String s = (a % 5 == 0) ? ((a % 2 == 0) ? (a + " is divisible by 5 and even number") : (a + " is divisible by 5 and odd number")) : ((a > 0) ? (a + " is not divisible by 5 and positive number") : (a
+                + " is not divisible by 5 and negative number"));
+
+        System.out.println(s);
       }
     }
 
@@ -2718,7 +2736,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   10 is divisible by 5 and even number
    ```
 
 6. Write a program to check whether the given number is `even`, `odd`, `neutral`. Use ternary operator.
@@ -2726,7 +2744,12 @@ There are 3 types of logical operators.
    ```java
     public class Solution {
       public static void main(String[] args) {
+        int a = 10;
 
+        String s = (a % 2 == 0 && a != 0) ? (a + " is an even number") : ((a == 0) ? (a + " is a neutral number") : (a
+                + " is an odd number"));
+
+        System.out.println(s);
       }
     }
 
@@ -2735,7 +2758,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   10 is an even number
    ```
 
 7. Write a program to check given character last digit is `even or odd`. If it is even check whether it is `divisible by 6` or not.
@@ -2743,7 +2766,12 @@ There are 3 types of logical operators.
    ```java
     public class Solution {
       public static void main(String[] args) {
+        int ch = 'A'; // 65
+        int last_deg = ch % 10; // 5
 
+        String s = (last_deg % 2 == 0) ? ((last_deg % 6 == 0) ? ("last digit of " + ch + ": " + last_deg + " is even and divisible by 6") : ("last digit of " + ch + ": " + last_deg + " is even and not divisible by 6")) : ("last digit of " + ch + ": " + last_deg + " is an odd number");
+
+        System.out.println(s);
       }
     }
 
@@ -2752,7 +2780,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   last digit of 65: 5 is an odd number
    ```
 
 8. Write a program to check whether the given character is ascii value is divisible by 2 and 3. If it is `divisible by 2 and 3`, check whether it is `divisible by 6`. If it is `not divisible by 2 and 3`, check whether it is `divisible by 4 or not`.
@@ -2760,7 +2788,11 @@ There are 3 types of logical operators.
    ```java
     public class Solution {
       public static void main(String[] args) {
+        int a = 'B';
 
+        String s = ((a % 2 == 0) && (a % 3 == 0)) ? ((a % 6 == 0) ? ("ascii value of " + (char)a + " is " + a + " which is divisible by 2, 3, and 6") : ("ascii value of " + (char)a + " is " + a + " which is divisible by 2, 3, but not divisible by 6")) : ((a % 4 == 0) ? ("ascii value of " + (char)a + " is " + a + " which is not divisible by 2, 3, but divisible by 4") : ("ascii value of " + (char)a + " is " + a + " which is not divisible by 2, 3 and 4"));
+
+        System.out.println(s);
       }
     }
 
@@ -2769,7 +2801,7 @@ There are 3 types of logical operators.
    **Output**
 
    ```vbnet
-
+   ascii value of B is 66 which is divisible by 2, 3, and 6
    ```
 
-9.
+---
