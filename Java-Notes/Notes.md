@@ -168,11 +168,20 @@
 
 ---
 
-- [Contraol Statements](#control-statements)
+- [Control Statements](#control-statements)
   - [Conditional statements.](#conditional-statements)
     - [if](#if)
     - [if else](#if-else)
     - [else if ladder](#else-if-ladder)
+    - [Nested if Problems](#nested-if-problems)
+    - [Switch statements](#switch-statements)
+    - [Switch statements](#switch-statements)
+      - [Fruits Problem](#fruits-problem)
+      - [Transfer statements](#transfer-statements)
+        - [break statement](#break-statement)
+        - [continue statement](#continue-statement)
+      - [fruits Problem solved](#fruits-problem-solved)
+      - [Assignment Problems on Switch](#assignment-problems-on-switch)
 
 ---
 
@@ -3634,7 +3643,7 @@ The statements which are used to do the validation and based on the validation t
    It is not a symbol.
    ```
 
-# Switch statements
+## Switch statements
 
 It is used to compare the multiple cases
 
