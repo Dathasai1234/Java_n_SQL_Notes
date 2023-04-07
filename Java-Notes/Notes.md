@@ -2964,7 +2964,7 @@ There are 2 types of increment operator based on their position.
     public class Solution {
       public static void main(String[] args) {
         int a = 30;
-        int b = (a) + (++a) + a + (a++) + a ; // 13 + 14 + 14 + 14 + 15
+        int b = (a) + (++a) + a + (a++) + a ;
         System.out.println(b);
       }
     }
@@ -3411,3 +3411,597 @@ The statements which are used to do the validation and based on the validation t
    ```
 
 ---
+
+## Nested if Problems
+
+1. Write a program to print a given number is even or odd and positive or not.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 3;
+
+        if (a % 2 == 0){
+            if (a > 0) {
+                System.out.println(a + " is even and positive");
+            } else {
+                System.out.println(a + " is even and negative");
+            }
+        } else {
+            if (a > 0) {
+                System.out.println(a + " is odd and positive");
+            } else {
+                System.out.println(a + " is odd and negative");
+            }
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   3 is odd and positive
+   ```
+
+2. Write a program to check given number is even or odd and positive or not, or neutral.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 0;
+
+        if(a % 2 == 0 && a != 0) {
+            if(a > 0) {
+                System.out.println(a + " is an even number and a positive number.");
+            } else {
+                System.out.println(a + " is an even number and a negative number.");
+            }
+        } else if (a == 0) {
+            System.out.println(a + " is a neutral number");
+        } else {
+            if(a > 0) {
+                System.out.println(a + " is an odd number and a positive number.");
+            } else {
+                System.out.println(a + " is an odd number and a negative number.");
+            }
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   0 is a neutral number
+   ```
+
+3. Write a program to check given number is positive, negative or neutral and even or odd.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 0;
+
+        if(a > 0) {
+            if(a % 2 == 0) {
+                System.out.println(a + " Is a positive number and an even number");
+            } else {
+                System.out.println(a + " Is a positive number and an odd number");
+            }
+        } else if(a < 0) {
+            if(a % 2 == 0) {
+                System.out.println(a + " Is a negative number and an even number");
+            } else {
+                System.out.println(a + " Is a negative number and an odd number");
+            }
+        } else if(a == 0) {
+            System.out.println(a + " is a neutral value");
+        } else {
+            System.out.println("Invalid data");
+        }
+
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   0 is a neutral value
+   ```
+
+4. Write a program to check given number is Divisible by 3 or divisible by 5. If it is divisible by 3, check whether it is a positive number.If it is divisible by 5, check whether it is a negative number. If it is not divisible by 3 and 5, check whether it is a neutral.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        int a = 15;
+
+        if(a % 3 == 0) {
+            if(a > 0) {
+                System.out.println(a + " Is divisible by 3 and is a positive number");
+            }
+        } else if(a % 5 == 0) {
+            if(a < 0) {
+                System.out.println(a + " Is divisible by 5 and is a negative number");
+            }
+        } else {
+            if(a == 0) {
+                System.out.println(a + " is a neutral value");
+            }
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   15 Is divisible by 3 and is a positive number
+   ```
+
+5. Write a program for online shopping based on the given inputs so that the selection of language will be done.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        System.out.println("Press any Key: ");
+
+        System.out.println("press 1 for Telugu");
+        System.out.println("press 2 for Hindi");
+        System.out.println("press 3 for English");
+        System.out.println("press 4 for Malayalam");
+        System.out.println("press 5 for Tamil");
+        System.out.println("press 6 for Kannada");
+
+        System.out.println("\n");
+
+        int key = 3;
+
+        if(key == 1) {
+            System.out.println("Selected Telugu Language");
+        } else if(key == 2) {
+            System.out.println("Selected Hindi Language");
+        } else if(key == 3) {
+            System.out.println("Selected English Language");
+        } else if(key == 4) {
+            System.out.println("Selected Malayalam Language");
+        } else if(key == 5) {
+            System.out.println("Selected Tamil Language");
+        } else if(key == 6) {
+            System.out.println("Selected Kannada Language");
+        } else {
+            System.out.println("Invalid input");
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   Press an Key:
+   press 1 for Telugu
+   press 2 for Hindi
+   press 3 for English
+   press 4 for Malayalam
+   press 5 for Tamil
+   press 6 for Kannada
+
+   Selected English Language
+   ```
+
+6. Try to program to check the given input is symbol or not.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        char a = 'A';
+
+        String s = ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z') || (a >= '0' && a <= '9')) ? ("It is not a " +
+                "symbol.") : ("It is a symbol.");
+
+        System.out.println(s);
+
+      // 2nd technique
+
+        s = (!((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z') || (a >= '0' && a <= '9'))) ? ("It is a Symbol") : (
+                "It is not a symbol.");
+
+        System.out.println(s);
+
+      // 3rd technique
+
+        s = (!(a >= 'A' && a <= 'Z') && !(a >= 'a' && a <= 'z') && !(a >= '0' && a <= '9')) ? ("It is a Symbol") : (
+                "It is not a symbol.");
+
+        System.out.println(s);
+      }
+    }
+   ```
+
+   **Output**
+
+   ```vbnet
+   It is not a symbol.
+   It is not a symbol.
+   It is not a symbol.
+   ```
+
+# Switch statements
+
+It is used to compare the multiple cases
+
+### Syntax
+
+> switch(input 1) {
+>
+> case 1 : {
+>
+> }
+>
+> case 2 : {
+>
+> }
+>
+> case 3 : {
+>
+> }
+>
+> default : {
+>
+> }
+>
+> }
+
+- Based on the given inside the switch, it will match the suitable cases.
+- Based on input type, you should change the case number type.
+
+---
+
+## Fruits problem.
+
+1. Write a program to select the fruits in the market.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        String fruit = "Orange";
+
+        switch (fruit) {
+            case "Apple" : {
+                System.out.println("Apple Fruit is selected");
+            }
+
+            case "Mango" : {
+                System.out.println("Mango Fruit is selected");
+            }
+
+            case "Orange" : {
+                System.out.println("Orange Fruit is selected");
+            }
+
+            case "guva" : {
+                System.out.println("guva Fruit is selected");
+            }
+
+            case "Water melon" : {
+                System.out.println("Water melon Fruit is selected");
+            }
+
+            default: {
+                System.out.println("Invalid Fruit is selected");
+            }
+      }
+    }
+   }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   Orange Fruit is selected
+   guva Fruit is selected
+   Water melon Fruit is selected
+   Invalid Fruit is selected
+   ```
+
+## Transfer statements.
+
+There are two types of transfer statements
+
+1. break.
+2. continue.
+
+---
+
+## break statement.
+
+- It is used to exit the block.
+- By default break is given to ifelse, elseif ladder.
+
+## continue statement.
+
+- It is used to continue the flow of the given block.
+- Betty fault continue is given to switch.
+- We should use continue in loops.
+
+## fruits problem solved.
+
+1. Write a program to select the fruits in the market.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        String month = "Orange";
+
+        switch (month) {
+            case "Apple" : {
+                System.out.println("Apple Fruit is selected");
+            } break;
+
+            case "Mango" : {
+                System.out.println("Mango Fruit is selected");
+            } break;
+
+            case "Orange" : {
+                System.out.println("Orange Fruit is selected");
+            } break;
+
+            case "guva" : {
+                System.out.println("guva Fruit is selected");
+            } break;
+
+            case "Water melon" : {
+                System.out.println("Water melon Fruit is selected");
+            } break;
+
+            default: {
+                System.out.println("Invalid Fruit is selected");
+            }
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   Orange fruit is selected
+   ```
+
+2. Try to program to select two fruits in a market.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        String fruit = "Orange";
+
+        switch (fruit) {
+            case "Apple" : {
+                System.out.println("Apple Fruit is selected");
+            } break;
+
+            case "Mango" : {
+                System.out.println("Mango Fruit is selected");
+            } break;
+
+            case "Orange" : {
+                System.out.println("Orange Fruit is selected");
+            }
+
+            case "guva" : {
+                System.out.println("guva Fruit is selected");
+            } break;
+
+            case "Water melon" : {
+                System.out.println("Water melon Fruit is selected");
+            } break;
+
+            default: {
+                System.out.println("Invalid Fruit is selected");
+            }
+      }
+    }
+   }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   Orange Fruit is selected
+   guva Fruit is selected
+   ```
+
+---
+
+## Assignment problems on switch.
+
+1. Write a program to select the colors in the rainbow.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        String colors = "Red";
+
+        switch (colors) {
+            case "Violet" : {
+                System.out.println("Violet color is selected");
+            } break;
+
+            case "Indigo" : {
+                System.out.println("Indigo color is selected");
+            } break;
+
+            case "Blue" : {
+                System.out.println("Blue color is selected");
+            } break;
+
+            case "Yellow" : {
+                System.out.println("Yellow color is selected");
+            } break;
+
+            case "Orange" : {
+                System.out.println("Orange color is selected");
+            } break;
+
+            case "Red" : {
+                System.out.println("Red color is selected");
+            } break;
+
+            default: {
+                System.out.println("Invalid color is selected");
+            }
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   Red color is selected
+   ```
+
+2. Write a program to select birthday month.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        String month = "June";
+
+        switch (month) {
+            case "January" : {
+                System.out.println("January month is selected");
+            } break;
+
+            case "February" : {
+                System.out.println("February month is selected");
+            } break;
+
+            case "March" : {
+                System.out.println("March month is selected");
+            } break;
+
+            case "April" : {
+                System.out.println("April month is selected");
+            } break;
+
+            case "May" : {
+                System.out.println("May month is selected");
+            } break;
+
+            case "June" : {
+                System.out.println("June month is selected");
+            } break;
+
+            case "July" : {
+                System.out.println("July month is selected");
+            } break;
+
+            case "August" : {
+                System.out.println("August month is selected");
+            } break;
+
+            case "September" : {
+                System.out.println("September month is selected");
+            } break;
+
+            case "October" : {
+                System.out.println("October month is selected");
+            } break;
+
+            case "November" : {
+                System.out.println("November month is selected");
+            } break;
+
+            case "December" : {
+                System.out.println("December month is selected");
+            } break;
+
+            default: {
+                System.out.println("Invalid month is selected");
+            }
+      }
+    }
+   }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   June month is selected
+   ```
+
+3. Write a program to select a favorite pet animal.
+
+   ```java
+    public class Solution {
+      public static void main(String[] args) {
+        String pet = "Parrot";
+
+        switch (pet) {
+            case "Cow": {
+                System.out.println("Cow pet is selected");
+            }
+            break;
+
+            case "Dog": {
+                System.out.println("Dog pet is selected");
+            }
+            break;
+
+            case "Cat": {
+                System.out.println("Cat pet is selected");
+            }
+            break;
+
+            case "Hen": {
+                System.out.println("Hen pet is selected");
+            }
+            break;
+
+            case "Parrot": {
+                System.out.println("Parrot pet is selected");
+            }
+            break;
+
+            default: {
+                System.out.println("Invalid pet is selected");
+            }
+        }
+      }
+    }
+
+   ```
+
+   **Output**
+
+   ```vbnet
+   Parrot pet is selected
+   ```
+
+4. Write the difference between Else ladder and switch case.
+
+   | else-if                                                                                                                  | Switch                                                                                                                              |
+   | ------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
+   | It is only used for validation purpose.                                                                                  | Switches only used for selection purpose.                                                                                           |
+   | It is used for validating multiple conditions                                                                            | It is used for selecting minimum one or maximum more than one item.                                                                 |
+   | No break statement is required                                                                                           | Break statement is required.                                                                                                        |
+   | If one condition is truthly validated. Automatic termination will occur.The other else statements will not get executed. | If one item is selected without break statement, more than one items can be selected. And here no automatic termination will occur. |
+   | The input for else-if is always boolean, and the output can be any data type.                                            | The switch statement can be any data type and output can be any data type.                                                          |
+   | Same conditions can be validated. i.e: duplicate conditions where no errors will occur.                                  | Cases cannot be deduplicated. Error will occur                                                                                      |
+   | Condition values are already declared in the main block                                                                  | Switch needs an input from the user.                                                                                                |
+   | The input value can be a constant or a variable                                                                          | The input value should be a variable, constant input is not allowed                                                                 |
+   | For every else-if condition a single block is required and another block required for else block.                        | A single block is enough for the entire switch statement.                                                                           |
